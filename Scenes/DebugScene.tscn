@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://SceneScripts/DebugScript.gd" type="Script" id=1]
+
+[sub_resource type="AudioStreamMicrophone" id=1]
+
+[node name="DebugScene" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 384.0
+margin_bottom = 212.0
+
+[node name="RecordButton" type="Button" parent="."]
+margin_left = 99.0
+margin_top = 440.0
+margin_right = 240.0
+margin_bottom = 491.0
+text = "Record"
+
+[node name="PlayButton" type="Button" parent="."]
+margin_left = 375.0
+margin_top = 429.0
+margin_right = 531.0
+margin_bottom = 495.0
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Status" type="Label" parent="."]
+margin_left = 555.0
+margin_top = 40.0
+margin_right = 881.0
+margin_bottom = 169.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenu" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamRecord" type="AudioStreamPlayer" parent="."]
+stream = SubResource( 1 )
+autoplay = true
+bus = "Record"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="RecordButton" to="." method="_on_RecordButton_pressed"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_MainMenu_pressed"]
