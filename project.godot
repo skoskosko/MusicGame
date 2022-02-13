@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "SignalProcessing",
+"language": "GDScript",
+"path": "res://Scripts/SignalProcessing.gd"
+} ]
+_global_script_class_icons={
+"SignalProcessing": ""
+}
+
 [application]
 
 config/name="MusicGame"

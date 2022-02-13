@@ -12,11 +12,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 15.0
-margin_top = 15.0
-margin_right = 384.0
-margin_bottom = 212.0
+[node name="Pitch" type="Label" parent="."]
+margin_left = 99.0
+margin_top = 508.0
+margin_right = 326.0
+margin_bottom = 561.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="RecordButton" type="Button" parent="."]
 margin_left = 99.0
@@ -24,6 +27,9 @@ margin_top = 440.0
 margin_right = 240.0
 margin_bottom = 491.0
 text = "Record"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PlayButton" type="Button" parent="."]
 margin_left = 375.0
@@ -45,8 +51,11 @@ __meta__ = {
 }
 
 [node name="MainMenu" type="Button" parent="."]
-margin_right = 12.0
-margin_bottom = 20.0
+margin_left = 719.0
+margin_top = 370.0
+margin_right = 982.0
+margin_bottom = 508.0
+text = "Main Menu"
 __meta__ = {
 "_edit_use_anchors_": false
 }

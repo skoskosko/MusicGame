@@ -15,4 +15,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="OpenRocket" type="Button" parent="."]
+margin_left = 387.0
+margin_top = 177.0
+margin_right = 535.0
+margin_bottom = 249.0
+text = "RocketGameTest"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="OpenDebug" to="." method="_on_OpenDebug_pressed"]
+[connection signal="pressed" from="OpenRocket" to="." method="_on_OpenRocket_pressed"]
