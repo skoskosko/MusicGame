@@ -41,7 +41,7 @@ func _on_PlayButton_pressed():
 
 # Draw Spectrum
 
-const VU_COUNT = 16
+const VU_COUNT = 800
 const FREQ_MAX = 11050.0
 const MIN_DB = 60
 func draw_spectrum(spectrum, width=400, height=100, x=0, y=0):
@@ -76,8 +76,8 @@ func get_pitch(spectrum):
 		return hz_val
 
 func _draw():
-	draw_spectrum(output_spectrum, 400, 100, 0, 0)
-	draw_spectrum(recorder_spectrum, 400, 100, 410, 0)
+	draw_spectrum(output_spectrum, 800, 100, 0, 0)
+	draw_spectrum(recorder_spectrum, 800, 100, 0, 110)
 	$Pitch.text = str(get_pitch(recorder_spectrum))
 	
 	
